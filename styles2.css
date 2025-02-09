@@ -1,0 +1,431 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+/* الهيدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d2c2c;
+}
+
+.logo span {
+    font-style: italic;
+    color: #8a6d6d;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* القسم الرئيسي */
+.hero h2 {
+    font-size: 20px;
+    color: #555;
+    margin: 30px 0;
+}
+
+.hero h2 span {
+    font-weight: bold;
+    font-style: italic;
+    color: #6d4c41;
+}
+
+.main-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c79a5f;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* تصنيفات الصور الدائرية */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    gap: 15px;
+}
+
+.category {
+    text-align: center;
+    width: 80px;
+}
+
+.category img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category p {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.as-seen-in {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c79a5f;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    height: 30px;
+    opacity: 0.6;
+}
+
+/* القسم التعريفي */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-text {
+    width: 40%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.handwriting {
+    font-size: 18px;
+    font-style: italic;
+    color: #6d4c41;
+}
+
+.learn-more {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.learn-more:hover {
+    background: #444;
+}
+
+/* الصور */
+.about-images {
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* أزرار التصنيفات */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.category {
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.vegetarian {
+    background: #833f66;
+    color: white;
+}
+.recipes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.recipe {
+    text-align: center;
+    max-width: 200px;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.label {
+    display: block;
+    background: #d4a657;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* قسم كتاب الوصفات */
+.cookbook {
+    background: #444;
+    color: white;
+    padding: 40px;
+    text-align: left;
+}
+
+.cookbook-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.cookbook img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.cookbook-text {
+    max-width: 400px;
+}
+
+.handwriting {
+    font-size: 18px;
+    font-style: italic;
+    color: #d4a657;
+}
+
+.email-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.email-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.email-form button {
+    background: #d4a657;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    color: #4e2d3c;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #4e2d3c;
+    font-size: 14px;
+}
+
+.signup h3 em {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.signup button {
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #777;
+}
+
+.other-brands img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #4e2d3c;
+    margin: 0 10px;
+    font-size: 12px;
+}
+/* ====== تصميم الجوال (Responsive) ====== */
+@media (max-width: 668px) {
+    .main-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
